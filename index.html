@@ -1,0 +1,306 @@
+<html><head>
+<h1>Regression Result @ 20250309_2345</h1>
+</head><body>
+<b>plankton-dasm.02e446b6
+</b><br>
+<b>cb-check.89b1745b
+</b><br>
+<p><a href="./report_of_the_regression_test.html">Plots</a></p>
+<h2>juliet_nodebug</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>CWE</th>
+      <th>Precision</th>
+      <th>Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CWE415_Double_Free</td>
+      <td>100.00%</td>
+      <td>87.53%</td>
+    </tr>
+    <tr>
+      <td>CWE416_Use_After_Free</td>
+      <td>100.00%</td>
+      <td>99.75%</td>
+    </tr>
+    <tr>
+      <td>CWE476_NULL_Pointer_Dereference</td>
+      <td>94.12%</td>
+      <td>88.24%</td>
+    </tr>
+  </tbody>
+</table><h2>juliet_normal</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>CWE</th>
+      <th>Precision</th>
+      <th>Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CWE122_Heap_Based_Buffer_Overflow</td>
+      <td>100.00%</td>
+      <td>72.07%</td>
+    </tr>
+    <tr>
+      <td>CWE369_Divide_by_Zero</td>
+      <td>100.00%</td>
+      <td>59.72%</td>
+    </tr>
+    <tr>
+      <td>CWE127_Buffer_Underread</td>
+      <td>100.00%</td>
+      <td>88.87%</td>
+    </tr>
+    <tr>
+      <td>CWE121_Stack_Based_Buffer_Overflow</td>
+      <td>100.00%</td>
+      <td>72.90%</td>
+    </tr>
+    <tr>
+      <td>CWE124_Buffer_Underwrite</td>
+      <td>100.00%</td>
+      <td>88.87%</td>
+    </tr>
+    <tr>
+      <td>CWE415_Double_Free</td>
+      <td>100.00%</td>
+      <td>89.61%</td>
+    </tr>
+    <tr>
+      <td>CWE401_Memory_Leak</td>
+      <td>87.13%</td>
+      <td>100.00%</td>
+    </tr>
+    <tr>
+      <td>CWE126_Buffer_Overread</td>
+      <td>100.00%</td>
+      <td>65.52%</td>
+    </tr>
+    <tr>
+      <td>CWE416_Use_After_Free</td>
+      <td>100.00%</td>
+      <td>99.75%</td>
+    </tr>
+    <tr>
+      <td>CWE476_NULL_Pointer_Dereference</td>
+      <td>100.00%</td>
+      <td>84.31%</td>
+    </tr>
+  </tbody>
+</table><h2>multios</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>num_fixed</th>
+      <th>num_total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table><h2>paperchart_spec</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>bin_name</th>
+      <th>lifter status</th>
+      <th>cbcheck status</th>
+      <th>time</th>
+      <th>memory</th>
+      <th>report</th>
+      <th>setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>xalancbmk_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:54:43</td>
+      <td>41446.208M</td>
+      <td>NULL Pointer Dereference:249</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>xz_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:03:03</td>
+      <td>6552.916M</td>
+      <td>Taint-Style Vulnerability:5,NULL Pointer Dereference:10</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>omnetpp_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:06:51</td>
+      <td>7949.9M</td>
+      <td>Taint-Style Vulnerability:1,Use After Free:20,NULL Pointer Dereference:122</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>mcf_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:02:11</td>
+      <td>1739.628M</td>
+      <td>Taint-Style Vulnerability:13</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>perlbench_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>01:53:21</td>
+      <td>52605.34M</td>
+      <td>Taint-Style Vulnerability:2,Use After Free:40,NULL Pointer Dereference:373</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>povray_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:13:33</td>
+      <td>11412.24M</td>
+      <td>Taint-Style Vulnerability:2,Use After Free:28,NULL Pointer Dereference:104</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>ldecod_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:13:51</td>
+      <td>4968.02M</td>
+      <td>Use After Free:1,NULL Pointer Dereference:19</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>deepsjeng_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:02:13</td>
+      <td>1363.252M</td>
+      <td>Taint-Style Vulnerability:1</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>nab_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:05:19</td>
+      <td>4064.344M</td>
+      <td>Taint-Style Vulnerability:12,Use After Free:12,NULL Pointer Dereference:18</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>cam4_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:34:01</td>
+      <td>52942.712M</td>
+      <td>Use After Free:309,NULL Pointer Dereference:207</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>x264_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:11:01</td>
+      <td>5514.392M</td>
+      <td>NULL Pointer Dereference:7</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>namd_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:07:31</td>
+      <td>3083.188M</td>
+      <td>Taint-Style Vulnerability:2</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>cactuBSSN_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:20:50</td>
+      <td>17567.412M</td>
+      <td>Use After Free:10,NULL Pointer Dereference:765</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>parest_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:44:40</td>
+      <td>24885.284M</td>
+      <td>NULL Pointer Dereference:469</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>imagick_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:27:35</td>
+      <td>23372.42M</td>
+      <td>NULL Pointer Dereference:46</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>leela_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:01:48</td>
+      <td>1576.196M</td>
+      <td>NULL Pointer Dereference:10</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>lbm_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:12</td>
+      <td>802.928M</td>
+      <td></td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>blender_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>01:08:39</td>
+      <td>51056.508M</td>
+      <td>Taint-Style Vulnerability:6,Use After Free:3,NULL Pointer Dereference:5855</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>sgcc_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>04:46:31</td>
+      <td>164759.444M</td>
+      <td>Taint-Style Vulnerability:24,Use After Free:450,NULL Pointer Dereference:2941</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>wrf_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>01:17:46</td>
+      <td>83551.04M</td>
+      <td>Use After Free:46,NULL Pointer Dereference:22</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus, timeout:21600, oom:200</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
