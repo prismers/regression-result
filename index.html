@@ -1,0 +1,306 @@
+<html><head>
+<h1>Regression Result @ 20250923_1809</h1>
+</head><body>
+<b>plankton-dasm.5cc21355
+</b><br>
+<b>cb-check.37e37c33
+</b><br>
+<p><a href="./report_of_the_regression_test.html">Plots</a></p>
+<h2>juliet_nodebug</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>CWE</th>
+      <th>Precision</th>
+      <th>Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CWE415_Double_Free</td>
+      <td>100.00%</td>
+      <td>87.53%</td>
+    </tr>
+    <tr>
+      <td>CWE416_Use_After_Free</td>
+      <td>100.00%</td>
+      <td>99.75%</td>
+    </tr>
+    <tr>
+      <td>CWE476_NULL_Pointer_Dereference</td>
+      <td>94.12%</td>
+      <td>88.24%</td>
+    </tr>
+  </tbody>
+</table><h2>juliet_normal</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>CWE</th>
+      <th>Precision</th>
+      <th>Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CWE122_Heap_Based_Buffer_Overflow</td>
+      <td>98.24%</td>
+      <td>74.73%</td>
+    </tr>
+    <tr>
+      <td>CWE369_Divide_by_Zero</td>
+      <td>100.00%</td>
+      <td>59.72%</td>
+    </tr>
+    <tr>
+      <td>CWE127_Buffer_Underread</td>
+      <td>98.29%</td>
+      <td>90.58%</td>
+    </tr>
+    <tr>
+      <td>CWE121_Stack_Based_Buffer_Overflow</td>
+      <td>97.87%</td>
+      <td>76.19%</td>
+    </tr>
+    <tr>
+      <td>CWE124_Buffer_Underwrite</td>
+      <td>98.29%</td>
+      <td>90.58%</td>
+    </tr>
+    <tr>
+      <td>CWE415_Double_Free</td>
+      <td>97.92%</td>
+      <td>93.77%</td>
+    </tr>
+    <tr>
+      <td>CWE401_Memory_Leak</td>
+      <td>91.91%</td>
+      <td>100.00%</td>
+    </tr>
+    <tr>
+      <td>CWE126_Buffer_Overread</td>
+      <td>98.62%</td>
+      <td>66.90%</td>
+    </tr>
+    <tr>
+      <td>CWE416_Use_After_Free</td>
+      <td>100.00%</td>
+      <td>99.75%</td>
+    </tr>
+    <tr>
+      <td>CWE476_NULL_Pointer_Dereference</td>
+      <td>98.04%</td>
+      <td>88.24%</td>
+    </tr>
+  </tbody>
+</table><h2>multios</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>num_fixed</th>
+      <th>num_total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table><h2>paperchart_spec</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>bin_name</th>
+      <th>lifter status</th>
+      <th>cbcheck status</th>
+      <th>time</th>
+      <th>memory</th>
+      <th>report</th>
+      <th>setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>xalancbmk_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:11:08</td>
+      <td>12602.228M</td>
+      <td>NULL Pointer Dereference:409</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>xz_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:01:18</td>
+      <td>4132.096M</td>
+      <td>NULL Pointer Dereference:24</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>omnetpp_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:03:08</td>
+      <td>6950.184M</td>
+      <td>Taint-Style Vulnerability:1,Use After Free:10,NULL Pointer Dereference:153</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>mcf_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:17</td>
+      <td>1201.712M</td>
+      <td>Taint-Style Vulnerability:3</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>perlbench_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:23:45</td>
+      <td>19493.164M</td>
+      <td>Use After Free:81,NULL Pointer Dereference:816</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>povray_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:01:08</td>
+      <td>4621.916M</td>
+      <td>Taint-Style Vulnerability:2,Use After Free:22,NULL Pointer Dereference:303</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>ldecod_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:51</td>
+      <td>2658.172M</td>
+      <td>Use After Free:1,NULL Pointer Dereference:50</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>deepsjeng_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:08</td>
+      <td>570.308M</td>
+      <td>Taint-Style Vulnerability:1</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>nab_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:25</td>
+      <td>1697.052M</td>
+      <td>Taint-Style Vulnerability:12,Use After Free:12,NULL Pointer Dereference:39</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>cam4_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:06:36</td>
+      <td>22100.964M</td>
+      <td>Use After Free:236,NULL Pointer Dereference:752</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>x264_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:46</td>
+      <td>3655.1M</td>
+      <td>NULL Pointer Dereference:59</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>namd_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:14</td>
+      <td>2002.892M</td>
+      <td>Taint-Style Vulnerability:2</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>cactuBSSN_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:02:42</td>
+      <td>13287.424M</td>
+      <td>Use After Free:8,NULL Pointer Dereference:482</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>parest_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:17:30</td>
+      <td>21718.348M</td>
+      <td>NULL Pointer Dereference:685</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>imagick_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:02:44</td>
+      <td>10771.356M</td>
+      <td>NULL Pointer Dereference:61</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>leela_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:22</td>
+      <td>1069.4M</td>
+      <td>NULL Pointer Dereference:21</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>lbm_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:00:02</td>
+      <td>530.624M</td>
+      <td></td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>blender_r_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:20:20</td>
+      <td>30790.072M</td>
+      <td>Taint-Style Vulnerability:6,Use After Free:14,NULL Pointer Dereference:14579</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>sgcc_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:48:16</td>
+      <td>51291.32M</td>
+      <td>Taint-Style Vulnerability:18,Use After Free:73,NULL Pointer Dereference:8312</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+    <tr>
+      <td>wrf_s_base</td>
+      <td>PASS</td>
+      <td>PASS</td>
+      <td>00:25:16</td>
+      <td>51594.468M</td>
+      <td>Use After Free:61,NULL Pointer Dereference:331</td>
+      <td>opt:-ps-npd -ps-uaf -ps-taint -segbuilder-aa=falconplus -psa-enable-fusion, timeout:21600, oom:200</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

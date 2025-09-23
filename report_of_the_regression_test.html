@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report of the Regression Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #2E4053;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #2E4053;
+            margin-top: 40px;
+            font-size: 2em;
+        }
+        h3 {
+            color: #2874A6;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        img {
+            display: block;
+            margin: 200px auto;
+            max-width: 200%;
+            height: auto;
+            transform: scale(1.5);
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Report of the Regression Test</h1>
+
+    <h1>Piecharts</h1>
+    <div class="section">
+        <h2>Latest Paperchart Spec Case Distribution</h2>
+        <img src='paperchart_pie_chart_20250923_1809_paperchart_spec_20250923_spec.png' alt='Latest Paperchart Spec Case Distribution' width='600'>
+    </div>
+
+    <div class="section">
+        <h2>Latest Paperchart Large Case Distribution</h2>
+        <p>No latest Paperchart Large Case Distribution chart available.</p>
+    </div>
+
+    <div class="section">
+        <h2>Latest Multios Fixed vs Total Binaries Chart</h2>
+        <img src='multios_pie_chart_20250923_1809_multios.png' alt='Latest Multios Pie Chart' width='600'>
+    </div>
+
+    <div class="section">
+        <h1>Line Charts</h1>
+        <h2>Paperchart</h2>
+
+        <h3>UAF number per day</h3>
+        <img src='UAF_reports_per_day.png' alt='UAF number per day' width='600'>
+
+        <h3>NPD number per day</h3>
+        <img src='NPD_reports_per_day.png' alt='NPD number per day' width='600'>
+
+        <h3>Taint number per day</h3>
+        <img src='Taint_reports_per_day.png' alt='Taint number per day' width='600'>
+
+        <h3>Average Time per Project</h3>
+        <img src='Time_per_day_average.png' alt='Average Time per Project' width='600'>
+
+        <h3>Average Memory per Project</h3>
+        <img src='Memory_per_day_average.png' alt='Average Memory per Project' width='600'>
+
+    </div>
+
+    <div class="section">
+        <h2>Nodebug Juliet Analysis Report</h2>
+
+        <h3>Precision for CWE416</h3>
+        <img src='juliet_precision_CWE416_Use_After_Free.smry_Nodebug_Juliet_Analysis_Report.png' alt='Precision for CWE416 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE476</h3>
+        <img src='juliet_precision_CWE476_NULL_Pointer_Dereference.smry_Nodebug_Juliet_Analysis_Report.png' alt='Precision for CWE476 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE415</h3>
+        <img src='juliet_precision_CWE415_Double_Free.smry_Nodebug_Juliet_Analysis_Report.png' alt='Precision for CWE415 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE415</h3>
+        <img src='juliet_recall_CWE415_Double_Free.smry_Nodebug_Juliet_Analysis_Report.png' alt='Recall for CWE415 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE476</h3>
+        <img src='juliet_recall_CWE476_NULL_Pointer_Dereference.smry_Nodebug_Juliet_Analysis_Report.png' alt='Recall for CWE476 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE416</h3>
+        <img src='juliet_recall_CWE416_Use_After_Free.smry_Nodebug_Juliet_Analysis_Report.png' alt='Recall for CWE416 (Nodebug_Juliet_Analysis_Report)' width='600'>
+
+    </div>
+
+    <div class="section">
+        <h2>Normal Juliet Analysis Report</h2>
+
+        <h3>Precision for CWE369</h3>
+        <img src='juliet_precision_CWE369_Divide_by_Zero.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE369 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE127</h3>
+        <img src='juliet_precision_CWE127_Buffer_Underread.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE127 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE124</h3>
+        <img src='juliet_precision_CWE124_Buffer_Underwrite.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE124 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE401</h3>
+        <img src='juliet_precision_CWE401_Memory_Leak.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE401 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE121</h3>
+        <img src='juliet_precision_CWE121_Stack_Based_Buffer_Overflow.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE121 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE126</h3>
+        <img src='juliet_precision_CWE126_Buffer_Overread.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE126 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE416</h3>
+        <img src='juliet_precision_CWE416_Use_After_Free.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE416 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE415</h3>
+        <img src='juliet_precision_CWE415_Double_Free.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE415 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE476</h3>
+        <img src='juliet_precision_CWE476_NULL_Pointer_Dereference.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE476 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Precision for CWE122</h3>
+        <img src='juliet_precision_CWE122_Heap_Based_Buffer_Overflow.smry_Normal_Juliet_Analysis_Report.png' alt='Precision for CWE122 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE416</h3>
+        <img src='juliet_recall_CWE416_Use_After_Free.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE416 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE476</h3>
+        <img src='juliet_recall_CWE476_NULL_Pointer_Dereference.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE476 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE126</h3>
+        <img src='juliet_recall_CWE126_Buffer_Overread.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE126 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE127</h3>
+        <img src='juliet_recall_CWE127_Buffer_Underread.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE127 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE415</h3>
+        <img src='juliet_recall_CWE415_Double_Free.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE415 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE369</h3>
+        <img src='juliet_recall_CWE369_Divide_by_Zero.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE369 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE121</h3>
+        <img src='juliet_recall_CWE121_Stack_Based_Buffer_Overflow.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE121 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE122</h3>
+        <img src='juliet_recall_CWE122_Heap_Based_Buffer_Overflow.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE122 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE401</h3>
+        <img src='juliet_recall_CWE401_Memory_Leak.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE401 (Normal_Juliet_Analysis_Report)' width='600'>
+
+        <h3>Recall for CWE124</h3>
+        <img src='juliet_recall_CWE124_Buffer_Underwrite.smry_Normal_Juliet_Analysis_Report.png' alt='Recall for CWE124 (Normal_Juliet_Analysis_Report)' width='600'>
+
+    </div>
+
+</body>
+</html>
